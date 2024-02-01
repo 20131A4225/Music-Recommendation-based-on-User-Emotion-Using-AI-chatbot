@@ -1,0 +1,210 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot with Song Recommendation</title>
+</head>
+<body>
+    <h1>Chatbot with Song Recommendation</h1>
+    <div id="chatDisplay"></div>
+    <input type="text" id="userInput" placeholder="Type here..."> -->
+    <!-- <button onclick="sendMessage()">Send</button> -->
+    <!-- <button id="sendButton" onclick="sendMessage()">Send</button>
+    <div id="recommendedSongs"></div>
+   
+    <script>
+        let conversationActive = true;
+
+function sendMessage() {
+    if (!conversationActive) {
+        return;
+    }
+
+    var userInput = document.getElementById('userInput').value;
+    document.getElementById('userInput').value = '';
+
+    var chatDisplay = document.getElementById('chatDisplay');
+    chatDisplay.innerHTML += '<div>User: ' + userInput + '</div>';
+
+    if (userInput.toLowerCase() === 'bye') {
+        conversationActive = false;
+        displayRecommendedSongs(userInput);  // Pass the user input to the function
+    } else {
+        fetch('/chatbot', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ 'user_input': userInput })
+        })
+        .then(response => response.json())
+        .then(data => {
+            chatDisplay.innerHTML += '<div>Chatbot: ' + data.response + '</div>';
+            chatDisplay.scrollTop = chatDisplay.scrollHeight;
+        });
+    }
+} -->
+
+
+<!-- // function displayRecommendedSongs(userInput) {
+//         var recommendedSongs = document.getElementById('recommendedSongs');
+//         recommendedSongs.innerHTML = '<h2>Recommended Songs:</h2>';
+
+//         fetch('/chatbot', {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json'
+//             },
+//             body: JSON.stringify({ 'user_input': userInput })
+//         })
+//         .then(response => response.json())
+//         .then(data => {
+//             var songsList = '';
+
+//             for (var i = 0; i < data.recommended_songs.length; i++) {
+//                 var songInfo = data.recommended_songs[i];
+//                 var songParts = songInfo.split(' - ');  // Split song info into parts
+//                 var songName = songParts[0];
+//                 var songUrl = songParts[1];
+//                 var songDisplay = `${i + 1}. ${songName} - <a href="${songUrl}" target="_blank">${songUrl}</a><br>`;
+//                 songsList += songDisplay;
+//             }
+
+//             recommendedSongs.innerHTML += songsList;
+//         });
+//          var emotionDisplay = `emotion: ${data.emotion}`;
+//          recommendedSongs.innerHTML = emotionDisplay + '<br>' + recommendedSongs.innerHTML;
+//     } -->
+<!-- function displayRecommendedSongs(userInput) {
+    // var recommendedSongs = document.getElementById('recommendedSongs');
+
+    var userInputBox = document.getElementById('userInput');
+    var sendButton = document.getElementById('sendButton');
+    var recommendedSongs = document.getElementById('recommendedSongs');
+    
+    userInputBox.style.display = 'none';  // Hide the input text box
+    sendButton.style.display = 'none';    // Hide the send button
+
+    recommendedSongs.innerHTML = '<h2>Recommended Songs:</h2>';
+
+    fetch('/chatbot', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ 'user_input': userInput })
+    })
+    .then(response => response.json())
+    .then(data => {
+        var songsList = '';
+
+        for (var i = 0; i < data.recommended_songs.length; i++) {
+            var songInfo = data.recommended_songs[i];
+            var songParts = songInfo.split(' - ');  // Split song info into parts
+            var songName = songParts[0];
+            var songUrl = songParts[1];
+            var songDisplay = `${i + 1}. ${songName} - <a href="${songUrl}" target="_blank">${songUrl}</a><br>`;
+            songsList += songDisplay;
+        }
+
+        var emotionDisplay = `Emotion: ${data.emotion}`;  // Get the user's emotion
+        recommendedSongs.innerHTML = emotionDisplay + '<br><br>' + songsList;  // Display emotion and songs
+    });
+}
+
+
+
+
+     </script>
+    
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot with Song Recommendation</title>
+</head>
+<body>
+    <h1>Chatbot with Song Recommendation</h1>
+    <div id="chatDisplay"></div>
+    <input type="text" id="userInput" placeholder="Type here...">
+    <!-- <button onclick="sendMessage()">Send</button> -->
+    <button id="sendButton" onclick="sendMessage()">Send</button>
+    <div id="recommendedSongs"></div>
+   
+    <script>
+        let conversationActive = true;
+
+        function sendMessage() {
+            if (!conversationActive) {
+                return;
+            }
+
+            var userInput = document.getElementById('userInput').value;
+            document.getElementById('userInput').value = '';
+
+            var chatDisplay = document.getElementById('chatDisplay');
+            chatDisplay.innerHTML += '<div>User: ' + userInput + '</div>';
+
+            if (userInput.toLowerCase() === 'bye') {
+                conversationActive = false;
+                displayRecommendedSongs(userInput);  // Pass the user input to the function
+            } else {
+                fetch('/chatbot', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ 'user_input': userInput })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    chatDisplay.innerHTML += '<div>Chatbot: ' + data.response + '</div>';
+                    chatDisplay.scrollTop = chatDisplay.scrollHeight;
+                });
+            }
+        }
+
+        function displayRecommendedSongs(userInput) {
+            //var recommendedSongs = document.getElementById('recommendedSongs');
+            var userInputBox = document.getElementById('userInput');
+            var sendButton = document.getElementById('sendButton');
+            var recommendedSongs = document.getElementById('recommendedSongs');
+            
+            userInputBox.style.display = 'none';  // Hide the input text box
+            sendButton.style.display = 'none';    // Hide the send button
+
+            recommendedSongs.innerHTML = '';
+
+            fetch('/chatbot', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ 'user_input': userInput })
+            })
+            .then(response => response.json())
+            .then(data => {
+                var emotionDisplay = `Emotion: ${data.emotion}`;
+                recommendedSongs.innerHTML += '<h2 style="font-size: 24px;">' + emotionDisplay + '</h2>';
+                recommendedSongs.innerHTML += '<h2>Recommended Songs:</h2>';
+
+                var songsList = '';
+
+                for (var i = 0; i < data.recommended_songs.length; i++) {
+                    var songInfo = data.recommended_songs[i];
+                    var songParts = songInfo.split(' - ');  // Split song info into parts
+                    var songName = songParts[0];
+                    var songUrl = songParts[1];
+                    var songDisplay = `${i + 1}. ${songName} - <a href="${songUrl}" target="_blank">${songUrl}</a><br>`;
+                    songsList += songDisplay;
+                }
+
+                recommendedSongs.innerHTML += songsList;
+            });
+        }
+
+    </script>
+</body>
+</html>

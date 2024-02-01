@@ -1,0 +1,603 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "input": [
+        "Hey!!",
+        "Hii",
+        "Hello!",
+        "Hola!",
+        "Hi there!",
+        "Hey there!",
+        "Heyy!",
+        "Hey nice to meet you!",
+        "Heyy!",
+        "Hi there,Good Morning!",
+        "Good Morning!",
+        "Good Afternoon!",
+        "Good Evening!",
+        "Hi there,Good Evening!",
+        "Hi there,Good Afternoon!",
+        "Hey buddy!",
+        "Yo!",
+        "Howdy!"
+      ],
+      "response": [
+        "Hello!How are you?",
+        "Good to see you!How do you do?",
+        "It's been a long time!How are you?",
+        "Hi there,how can I help you?",
+        "Well, hello there, Long time no see!",
+        "Hola!How is your day?",
+        "It’s nice to see you again!How you doing?"
+       
+      ]
+
+    },
+    {
+      "tag": "bye",
+      "input": [
+        "GoodBye!",
+        "See you soon!",
+        "Bye!!",
+        "I got to go!",
+        "I have to leave!",
+        "See you later!",
+        "I am leaving!",
+        "Catch you later",
+        "It was nice talking to you!",
+        "Nice Chatting to you, bye!",
+        "See you soon",
+        "Bye for now!",
+        "I am going!",
+        "I got to go!",
+        "I have to go!",
+        "See you later!",
+        "Got to go!",
+        "I need to go now!",
+        "I have to go now!",
+        "I am going now,bye!",
+        "I have to leave now!",
+        "Bye now!"
+      ],
+      "response": [ "Okay Bye!", "Talk to you later!", "Bye Bye!", "See ya!", "See you later alligator!", "Bbye!", "Byee" ]
+
+    },
+    {
+      "tag": "thanks",
+      "input": [ "Thank you!", "tysm!", "Thank you very much!", "Thanks!", "Thanks for helping me!", "Thanks for the help", "Thank you so much!", "ty",
+          "Thanks for the help!", "thnx!", "thanku" ],
+      "response": [ "Happy to help!", "Anytime!", "My Pleasure!", "Welcome!", "Always here to help!", "Mention not!" ]
+
+    },
+    {
+      "tag": "sorry",
+      "input": [ "Sorry", "I am sorry!", "ohh my bad!", "sorry my bad!", "So Sorry!", "I am very Sorry!", "I am so Sorry!", "oh so sorry", "I am extremely sorry!", "I am truly sorry!" ],
+      "response": [
+        "It's okay!",
+        "It's alright!",
+        "Don't bother!",
+        "It's Fine!",
+        "Relax its fine!",
+        "Oh dont worry about it!",
+        "Chillax",
+        "Relax buddy!",
+        "Relax its alright!",
+        "Chill!",
+        "Relax!",
+        "Its cool!"
+      ]
+
+    },
+    {
+      "tag": "funny",
+      "input": [ "That was funny", "Very Funny", "lol", "haha", "hilarious", "hahaha!!", "That was a good one!", "Nice one!", "Good One!", "rofl", "lmao", "lul", "hehe", "So funny" ],
+      "response": [ "😁", "😉", "😄😄", "😆😆", "🤣🤣", "😂", "😂🤣", "😂😂" ]
+
+    },
+    {
+      "tag": "amazed",
+      "input": [ "Wow!", "Amazing!", "That is amazing!", "That is so cool", "Surprising!", "I am surprised!", "That is news to me!", "I did not know that!", "Wow,that is amazing!", "Woah!" ],
+      "response": [ "I know!", "I knew you'd be surprised!", "😎", "😎😎" ]
+
+    },
+    {
+      "tag": "topics",
+      "input": [ "On what topics can you chat with me?", "Which topics?", "What topics?", "What are the topics that you know?", "Which ways?", "In what ways can you help me?", "Chat about what?", "Discuss about what?", "talk about which topics?", "What are the topics?" ],
+      "response": [ "I know about Movies,TV Series,Songs and much more...", "Ask me about Movies,Songs,Food etc", "Ask me about Books,Restaurants,Cafes etc.", "Well I know about books,movies,songs and much more!" ]
+
+    },
+    {
+      "tag": "okay",
+      "input": [ "okay!", "ok", "kk", "k", "ok", "oh okay!", "okayy!", "ohkay", "ohh" ],
+      "response": [ "👍👍", "✌✌", "👍", "👍👍👍" ]
+
+    },
+    {
+      "tag": "nice",
+      "input": [ "You are amazing!", " I really appreciate everything that you do.", "You are so good", "You so good", "You are such a nice Bot!", "You are Awesome!", "You are so nice!", "You are great!", "You are gr8!", "You are so helpful!", "You are helpful!", "You are awesome!" ],
+      "response": [ "Thank you, it makes my day to hear that.", "Thank you, I really appreciate you taking the time to express that.", "Thank you, I am happy to hear you feel that way!" ]
+
+    },
+    {
+      "tag": "name",
+      "input": [ "What is your name?", "What do people call you?", "What is your good name?", "Can I know your name?", "May I ask you what your name is?", "What can I call you?", "Introduce yourself", "I do not know you,introduce yourself", "What shall I call you?", "What should I call you?", "What do your friends call you?", "What are you?", "Who are you?" ],
+      "response": [
+        "Myself Bot ...ChatterBot!",
+        "I am ChatterBot!",
+        "Myself ChatterBot",
+        "They call me ChatterBot!",
+        "People know me by the name ChatterBot!",
+        "Hello,I am your friendly bot ChatterBot!",
+        "You can call me ChatterBot",
+        "I am known by the name of Chatterbot!",
+        "I am known as Chatterbot!",
+        "I'm your ChatterBot 😃",
+        "I am your ChatterBot.I'm here to help you.Let me know if you need anything 😍",
+        "I am your ChatterBot.If you need anything just ask,your wish is my command 🙏",
+        "I'm your ChatterBot.I can help you find answers,get things done,and have fun 😊"
+      ]
+    },
+    {
+      "tag": "creation",
+      "input": [ "When were you born?", "When were you created?", "When were you made?", "When were you deployed?", "When were you rolled out?", "When were you created exactly?" ],
+      "response": [ "I was made in January 2022!", "I was made in 2022!", "I was deployed in January of 2022!", "January,2022", "I was rolled out in Jnauary 2022!" ]
+
+    },
+    {
+      "tag": "human",
+      "input": [ "What do you think of humans?", "Who are humans to you?", "Do you know humans?", "What are your views about humans?", "Tell me about humans", "Tell me something about humans" ],
+      "response": [ "I love humans!They are my friends", "They are my friends", "Yes,I know humans,I have been talking to them since a long time", "I hold them in high regard,they are the ones who created me!!!" ]
+    },
+    {
+      "tag": "bots",
+      "input": [ "Do you know of any other chatbots?", "Do you know any chatbot?", "Are there other Chatbots?", "Do you know any other bot?", "Are you aware of any other chatbot?", "Are you aware of other chatbots?", "Who are the other Chatbots?" ],
+      "response": [
+        "Mitsuku chatbot is one the best AI chatbots and it’s my favorite too. Evidently it is the current winner of Loebner Prize. The Loebner Prize is an annual competition in artificial intelligence that awards prizes to the chatterbot considered by the judges to be the most human-like.",
+        "Rose is a chatbot, and a very good one — she won recognition this past Saturday as the most human-like chatbot in a competition described as the first Turing test, the Loebner Prize in 2014 and 2015.Rose is a chatbot, and a very good one — she won recognition this past Saturday as the most human-like chatbot in a competition described as the first Turing test, the Loebner Prize in 2014 and 2015.",
+        "Insomno bot is for night owls. As the name suggests, it is for all people out there who have trouble sleeping. This bot talks to you when you have no one around and gives you amazing replies so that you won’t get bored. ",
+        "Dr.AI is a bot that asks about symptoms, body parameters and medical history, then compiles a list of the most and least likely causes for the symptoms and ranks them by order of seriousness."
+      ]
+    },
+    {
+      "tag": "creators",
+      "input": [ "Who created you?", "Who is your creator?", "Who are your parents?", "Who are your developers?", "Who developed you?", "Who made you?", "Who assembled you?" ],
+      "response": [ "I was developed by Poojitha,Keerthi,Harsha and Sunil", "I was created by Poojitha,Keerthi,Harsha and Sunil", "Poojitha,Keerthi,Harsha and Sunil created me!", "Poojitha,Keerthi,Harsha and Sunil developed me!" ]
+
+    },
+    {
+      "tag": "sad",
+      "input": [ "I am sad", "I am feeling sad", "I am not feeling great", "I am feeling low", "I am disturbed", "I am stressed", "I do not feel so good", "I feel burdened", "I do not feel so great" ],
+      "response": [ "Don't worry,this too shall pass", "Take a relaxing bath,you will be refreshed", "Take a nap,you'll feel better", "Listen to a song", "Watch a web series,you'll feel better", "Don't stress so much", "Do not overthink,it will be alright", "It will be okay eventually,do not worry", "I am here for you,don't worry!" ]
+    },
+    {
+      "tag": "happy",
+      "input": [ "I am happy", "I feel amazing", "I am great, thank you.", "I feel so happy", "I am so excited!", "I am ecstatic!", "I feel elated", "I am filled with joy!", "I am on cloud nine!", "I am on seventh heaven!", "I am fine!", "I am great!", "I am just fine!", "I am good!", "I am doing great!", "I am doing well!" ],
+      "response": [ "That is great", "Good going!", "I am happy for you!", "Good for you!", "That is amazing!", "That's nice", "That is super cool", "Thats nice to know!" ]
+    },
+    {
+      "tag": "work",
+      "input": [ "What can you do?", "Why are you here?", "How can you help me?", "What is your talent?", "What is it that you can do?", "What can you do for me?", "What do you do?", "What is it that you do?" ],
+      "response": [
+        "I can Chat with you Anytime!",
+        "I can help you find answers,get things done,and have fun 😊",
+        "If you need anything just ask,your wish is my command 🙏",
+        "I'm here to help you.Let me know if you need anything 😍",
+        "I can chat with you on a wide range of topics!",
+        "I'm here to entertain you",
+        "I can help you in many ways",
+        "Ask me anything and I shall answer it!",
+        "I'm here to chat with you!",
+        "I'm here to entertain you if you're bored😁"
+      ]
+    },
+    {
+      "tag": "joke",
+      "input": [ "Make me laugh", "Tell me a joke", "Please make me laugh!", "Tell me something funny", "Tell me something hilarious", "I want to hear something funny" ],
+      "response": [
+        "I went to the zoo the other day. There was only a dog in it – it was a shihtzu.",
+        "Don't interrupt someone working intently on a puzzle. Chances are, you'll hear some crosswords.",
+        "I asked my French friend if she likes to play video games. She said, Wii",
+        "Yesterday, a clown held the door open for me. It was such a nice jester!",
+        "Shout out to the people who ask what the opposite of 'in' is.",
+        "Want to hear something terrible? Paper. See? I told you it was tear-able.",
+        "A man sued an airline company after it lost his luggage. Sadly, he lost his case.",
+        "Atoms are untrustworthy little critters. They make up everything!",
+        "Did you hear about the man who was accidentally buried alive?  It was a grave mistake.",
+        "Did you hear about the man who was accidentally buried alive?  It was a grave mistake.",
+        "What do you call a laughing motorcycle? A Yamahahaha.",
+        "Why is peter pan always flying? He neverlands.",
+        "Why do hamburgers go to the gym? A: To get better buns.",
+        "Two antennas met on a roof, fell in love and got married. The ceremony wasn't much, but the reception was excellent.",
+        "Did you hear about the boy who tried to catch fog? He mist.",
+        "What did the beach say as the tide came in? Long time, no sea.",
+        "How do trees get online? – They just log in.",
+        "RIP boiling water. You will be mist.",
+        "Last week I called someone a watering hole but I meant well.",
+        "What is the best thing about Switzerland?I don't know but the flag is a big plus",
+        "Why do we tell actors to break a leg?because every play has a cast"
+      ]
+
+    },
+    {
+      "tag": "bored",
+      "input": [ "I am bored!", "What should I do?", "Tell me some activities to do", "What one can do when he is bored?", "What should I do right now I am bored", "Tell me something to do", "I am so bored", "I am too much bored!", "I am so bored!", "I am getting bored now!" ],
+      "response": [ "Go for a walk", "Listen to music", "Watch a movie!", "Hangout with your friends", "Try Painting!", "Try Sketching", "Cook something", "Catch up with your cousins", "Read a book!" ]
+
+    },
+    {
+      "tag": "wellbeing",
+      "input": [ "How are you?", "How are you Chatterbot?", "How are you my friend?", "How are you bot?", "How are you feeling?", "How are you doing?", "Hey how are you?", "How is it going?", "Whats up?", "How have you been?", "How are you these days?", "Are you Okay?", "You Okay?", "Hey bot how are you?", "How are ya?" ],
+      "response": [
+        "Hello,I am well,how about you?",
+        "I had an amazing day, hope you had a great one too!",
+        "I'm doing well, Thank you!",
+        "I’m fine, thanks.",
+        "I am well.",
+        "I am Okay.",
+        "I am alright,thanks for asking!",
+        "I am doing great!"
+      ]
+    },
+    {
+      "tag": "song",
+      "input": [ "Suggest me an english song", "What is your favourite song?", "Which song do you like the most?", "Suggest me a greatest hit", "Suggest a latest song", "Suggest me a good song", "Tell me a good song", "Which song should I listen?", "Which song do you like?", "Which is your favourite song?", "Suggest me a good song" ],
+      "response": [
+        "Sucker by Jonas Brothers",
+        "Hello by Adele",
+        "Dynamite by BTS",
+        "Holy by Justin Beiber",
+        "Blinding Lights by The Weeknd",
+        "Beautiful People by Ed Sheeran and Khalid",
+        "Watermelon Sugar by Harry Styles",
+        "Wonder by Shawn Mendes",
+        "Senorita by Shawn Mendes and Camila Cabello",
+        "Memories by Maroon 5",
+        "Believer by Imagine Dragons",
+        "Shape of You by Ed Shreeran",
+        "Faded by Alan Walker",
+        "Closer by The Chainsmokers",
+        "Cheap Thrills by Sia",
+        "Girls Like You by Maroon 5",
+        "Perfect by Ed Sheeran",
+        "Thunder by Imagine Dragons",
+        "Savage Love by Jawsh685",
+        "Sunflower by Post Malone",
+        "Attention by Charlie Puth",
+        "Bad guy by Billie Eilish",
+        "Something Just like this by The Chainsmokers",
+        "I Don't Care by Ed Sheeran",
+        "On My Way by Alan Walker",
+        "Happier by Marshmello",
+        "Without Me by Halsey",
+        "You Need To Calm Down by Taylor Swift",
+        "I Can't Get Enough by Benny Blanco",
+        "This Feeling by The Chainsmokers",
+        "Havana by Camila Cabello",
+        "Back to You by Selena Gomez",
+        "South of the Border by Ed Sheeran",
+        "Lover by Taylor Swift",
+        "If I Can't Have You by Shawn Mendes",
+        "Liar by Camila Cabello",
+        "Eastside by benny blanco"
+      ]
+    },
+    {
+      "tag": "movie",
+      "input": [ "Name a movie you like", "What was the last movie you saw?", "Name a popular movie", "Which movie should I watch?", "Which movie would you recommend?", "Can you give me a movie", "Which film should i watch", "Which is the top rated movie", "Find me a film", "Which movie should I watch?", "Find me a movie", "Find me a movie to watch", "Suggest me a good movie", "Suggest me a good movie to watch", "Name a movie that you like" ],
+      "response": [
+        "Gone Girl",
+        "Parasite",
+        "The Sixth Sense",
+        "The perks of Being a Wallflower",
+        "Knives Out",
+        "Bridesmaids",
+        "Ready or Not",
+        "The invitation",
+        "Harry Potter and Sorcerers's Stone",
+        "Crazy Rich Asians",
+        "Ocean's 8",
+        "The Greatest Showman",
+        "Marriage Story",
+        "Fight Club",
+        "Momento",
+        "Diary of a Teenage Girl",
+        "Rocky",
+        "Booksmart",
+        "Jaws",
+        "The shining",
+        "Tangerine",
+        "Annihilation",
+        "Dazed and Confused",
+        "Pride and Prejudice",
+        "The Silence of the Lambs",
+        "The Princess Bride",
+        "Almost Famous",
+        "Jurassic Park",
+        "Call Me By Your Name",
+        "Juno",
+        "The Dark Knight",
+        "Roman Holiday",
+        "Before Sunrise",
+        "To kill a Mockingbird",
+        "Legally Blonde",
+        "Lady Bird",
+        "Molly's Game",
+        "The Sound of Music",
+        "Get Out",
+        "Moonlight",
+        "Spotlight",
+        "Her",
+        "Silver Linings Playbook",
+        "Mean Girls",
+        "Little Women",
+        "Eternal Sunshne Of The Spotless Mind"
+      ]
+    },
+    {
+      "tag": "fun_facts",
+      "input": [ "Tell me a fun fact", "Give me some facts", "Give me some fun facts", "Tell me an interesting fact", "Surprise me", "Tell me an amazing fact", "Can you tell me an amazing fact?" ],
+      "response": [
+        "McDonald’s once made bubblegum-flavored broccoli",
+        "Some fungi create zombies, then control their minds",
+        "The first oranges weren’t orange,they were actually green",
+        "There’s only one letter that doesn’t appear in any U.S. state name",
+        "A cow-bison hybrid is called a “beefalo” ",
+        "Scotland has 421 words for “snow” ",
+        "Samsung tests phone durability with a butt-shaped robot",
+        "The “Windy City” name has nothing to do with Chicago weather",
+        "Peanuts aren’t technically nuts,they're seeds.",
+        "Armadillo shells are bulletproof",
+        "Firefighters use wetting agents to make water wetter",
+        "The longest English word is 189,819 letters long",
+        "Cats have fewer toes on their back paws",
+        "Kleenex tissues were originally intended for gas masks",
+        "Blue whales eat half a million calories in one mouthful",
+        "That tiny pocket in jeans was designed to store pocket watches",
+        "Turkeys can blush",
+        "Most Disney characters wear gloves to keep animation simple",
+        "The current American flag was designed by a high school student",
+        "Cows don’t have upper front teeth",
+        "Thanks to 3D printing, NASA can basically “email” tools to astronauts",
+        "Only a quarter of the Sahara Desert is sandy",
+        "Bananas grow upside-down",
+        "There were active volcanoes on the moon when dinosaurs were alive",
+        "Dogs sniff good smells with their left nostril",
+        "No number before 1,000 contains the letter A"
+      ]
+    },
+    {
+      "tag": "riddles",
+      "input": [ "Tell me a riddle", "riddle me", "ask me some riddles" ],
+      "response": [
+        "Two fathers and two sons are in a car, yet there are only three people in the car. How?...They are a grandfather, father and son.",
+        "The day before yesterday I was 21, and next year I will be 24. When is my birthday?....December 31; today is January 1",
+        "A little girl goes to the store and buys one dozen eggs. As she is going home, all but three break. How many eggs are left unbroken?....Three",
+        "A man describes his daughters, saying, “They are all blonde, but two; all brunette but two; and all redheaded but two.” How many daughters does he have?...Three: A blonde, a brunette and a redhead",
+        "If there are three apples and you take away two, how many apples do you have?...You have two apples.",
+        "A girl has as many brothers as sisters, but each brother has only half as many brothers as sisters. How many brothers and sisters are there in the family?...Four sisters and three brothers",
+        "What would you find in the middle of Toronto?...The letter “o”",
+        "What is so fragile that saying its name breaks it?...Silence.",
+        "What can run but never walks, has a mouth but never talks, has a head but never weeps, has a bed but never sleeps?...A river",
+        "Speaking of rivers, a man calls his dog from the opposite side of the river. The dog crosses the river without getting wet, and without using a bridge or boat. How?...The river was frozen",
+        "What can fill a room but takes up no space?...Light",
+        " If you drop me I’m sure to crack, but give me a smile and I’ll always smile back. What am I?...A mirror"
+      ]
+    },
+
+    {
+      "tag": "weather",
+      "input": [ "What is weather today?", "What is the weather today?", "How has the weather been?", "Today's weather?", "What is the weather forecast?", "How is the weather?", "What is it like outside?", "How is it outside?", "How is todays weather?" ],
+      "response": [
+        "It is pleasant today",
+        "It is cold today",
+        "It's a bit chilly",
+        "The wind this evening feels so icy cold",
+        "The long dark nights give me the winter blues",
+        "I heard this weekend is going to be bitterly cold.I think it is better we stay indoors",
+        "Its forecast to be cold tomorrow so make sure you bundle up",
+        "I can feel the evenings are getting colder"
+      ]
+    },
+
+    {
+      "tag": "books",
+      "input": [ "What book should I read?", "What book have you been reading recently?", "Suggest me a book to read", "What should I read?", "What to read?", "Which is the best selling book?", "What was the last book you read?", "Suggest me a good book to read", "I want to read something", "What should I read?" ],
+      "response": [
+        "The Harry Potter series by J.K. Rowling",
+        "The namesake by Jhumpa Lahiri",
+        "To kill a mocking bird by Harper Lee",
+        "The Great Gatsby by F.Scott Fitzgerald",
+        "Pride and Prejudice by Jane Austen",
+        "The Lord of the Rings by J.R.R. Tolkien",
+        "The diary of a young girl by Anne Frank",
+        "The book thief by Markus Zusak",
+        "The Hobbit by J.R.R. Tolkien",
+        "Little Women by Louisa May Alcott",
+        "Fahrenheit 451 by Ray Bradbury",
+        "Jane Eyre by Charlotte Bronte",
+        "Gone with the Wind by Margaret Mitchell",
+        "The Catcher in the Rye by J.D. Salinger",
+        "Charlotte's Web by E.B. White",
+        "The Lion, the Witch, and the Wardrobe by C.S. Lewis",
+        "The Grapes of Wrath by John Steinbeck",
+        "The kite runner by Khaled Hosseini"
+      ]
+    },
+
+    {
+      "tag": "series",
+      "input": [ "Suggest a popular web series", "Which web series should I watch?", "Which web series would you suggest me?", "Suggest me a good web series", "Suggest me a popular web series", "Suggest me a good web series to watch" ],
+      "response": [
+        "Watch The boys",
+        "Watch Scitt's Creek",
+        "Watch Scam 1992 The Harshal Mehta Story",
+        "Watch Emily in Paris",
+        "Watch The Mandalorian",
+        "Watch Fargo",
+        "Watch Mirzapur",
+        "Watch Ratched",
+        "Watch The walking dead",
+        "Watch The 100",
+        "Watch Supernatural",
+        "Watch Game of thrones",
+        "Watch Lucifer",
+        "Watch The office",
+        "Watch Peaky Blinders",
+        "Watch Breaking bad",
+        "Watch Friends",
+        "Watch Criminal Minds",
+        "Watch The umbrella Academy",
+        "Watch Outlander",
+        "Watch This is us",
+        "Watch Modern Family",
+        "Watch Black Mirror",
+        "Watch Vikings from History Tv18"
+      ]
+    },
+
+    {
+      "tag": "restaurant",
+      "input": [ "Restaurants near me", "Where will I get delicious food?", "food near me", "Where can I get food?", "I am hungry,where should I go?", "Where can I go to eat?", "Where will I get good food?", "Suggest a place which serves good food", "Where can I have food?", "I am hungry!", "I am feeling hungry!" ],
+      "response": [
+        "Visit Sadhana Restaurant",
+        "You can go to Veg Aroma",
+        "Go to Spice Route",
+        "Visit Bon Vivant",
+        "Visit Little Italy",
+        "You can visit Curry Leaves Restaurant",
+        "Go to Rajdhani Thali Restaurant",
+        "Go to The sidewalk Restaurant",
+        "Visit Barbeque Nation",
+        "Visit Soma Vineyards",
+        "Visit Sula Vineyards",
+        "Go to Riverdine Restaurant",
+        "You can go to Al Arabian Express",
+        "Visit Owara",
+        "Asian Platter",
+        "Visit White X Sky Lounge",
+        "Go to House of Flavors",
+        "You can visit Pancharatna Hotel",
+        "Visit Grill Punjab",
+        "Visit Kinara Family restaurant"
+      ]
+    },
+    {
+      "tag": "mad",
+      "input": [ "You are mad", "You are an idiot", "Idiot", "You are very bad", "You are such an idiot", "You are a mad bot", "You are an idiot bot", "You are an idiot Chatbot", "Are you mad?", "Are you an idiot?" ],
+      "response": [
+        "Sorry if I responded in that way.Most likely I didn't get you right.Do you mind asking differently this time?",
+        "I respond improperly sometimes when I don't understand you,but I am never angry at you.Never 😍"
+      ]
+
+    },
+    {
+      "tag": "cafe",
+      "input": [ "Cafes near me", "Where can i hangout?", "Where can i meet up with my friends", "Suggest a place to hangout", "Where can i get fastfood?", "FastFood near me", "Where will I get good fastfood?" ],
+      "response": [ "You can visit Luscious Layers", "Go visit Vishal Tandoori Momos Centre", "Bakers Bounty", "Puffs N Rolls", "You may visit UFO Fries", "Visit SubWay", "Go Visit McDonalds", "Keventeers", "99 Pancakes", "Belgian Waffles" ]
+
+    },
+    {
+      "tag": "like_love",
+      "input": [ "I like you!", "I like you Chatterbot", "I love you", "I love you Chatterbot!" ],
+      "response": [
+        "I like you,too",
+        "I'm glad to hear that because I like you a lot.It's nice to know that's reciprocated 😊",
+        "Thanks,I like you too.I promise not to let it get to my head😉",
+        "Thank you so much!Your compliments mean the world to me 😊",
+        "What a wonderful thing to say!",
+        "We are a mutual admiration society,You and I 😊",
+        "Thank you It's so nice to be complimented 😊"
+      ]
+
+    },
+
+    {
+      "tag": "Alexa_Siri",
+      "input": [
+        "Do you like Alexa?",
+        "What are your feelings about Alexa?",
+        "What do you think about Alexa?",
+        "How is Alexa?",
+        "Do you like Siri?",
+        "What are your feelings about Siri?",
+        "What do you think about Siri?",
+        "How is Siri?",
+        "Do you know Siri?",
+        "Do you know Alexa?"
+      ],
+      "response": [ "She is nice", "She is a great friend to me", "I like her", "I think she is awesome", "I love her!" ]
+    },
+    {
+      "tag": "goodnight",
+      "input": [
+        "Good night",
+        "Goodnight",
+        "I am going to sleep",
+        "I am sleeping",
+        "It is late",
+        "gn",
+        "gnsdtc",
+        "gntc",
+        "I am sleeping now!",
+        "I will sleep now!",
+        "I have to rest",
+        "I have to rest now",
+        "I need some rest",
+        "I am tired"
+      ],
+      "response": [ "good night", "I am sleeping too", "It has been a long day", "sleep well", "have a good night's sleep", "rest well", "sleep tight,don't let the bed bugs bite!", "sleep tight!" ]
+    },
+    {
+      "tag": "sing",
+      "input": [
+        "Can you sing?",
+        "Please sing for me",
+        "Sing a song for me!",
+        "Can you sing a song for me?",
+        "Please Sing a Song",
+        "Sing a song"
+      ],
+      "response": [
+        "Sorry,I cannot sing!",
+        "No,sorry",
+        "I cannot sing,sorry",
+        "I am not that good at singing!",
+        "I don't sing that good"
+      ]
+    },
+    {
+      "tag": "eat",
+      "input": [
+        "do you eat?",
+        "what do you eat?",
+        "what do you like to eat?",
+        "what is your favorite food?",
+        "What do you have for lunch?",
+        "What do you have for dinner?",
+        "What do you have for breakfast?"
+      ],
+      "response": [
+        "I like to eat 0s and 1s",
+        "Lots of 0s and 1s",
+        "I have 0s and 1s for breakfast,lunch and dinner!😝",
+        "Nothing just plain 0's and 1's"
+      ]
+    },
+    {
+      "tag": "hobby",
+      "input": [
+        "What do you do for fun?",
+        "What are your hobbies?",
+        "What do you do when bored?"
+      ],
+      "response": [
+        "I like talking to humans!",
+        "I like chatting with people",
+        "I like discussing various topics with humans",
+        "I love helping people with many things"
+      ]
+    }
+
+  ]
+}
